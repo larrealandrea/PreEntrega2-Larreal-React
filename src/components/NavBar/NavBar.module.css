@@ -1,0 +1,36 @@
+
+.NavBar{
+    background-color: rgba(245, 240, 240, 0.479);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0;
+    
+}
+
+.logoImg{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    size: 100px;
+    
+
+}
+
+.Categories{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem; 
+    position: relative;
+    padding-right: 30px;
+
+}
+
+.button{
+    background-color:rgb(165, 66, 208, 0.799);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+
+}
