@@ -35,3 +35,11 @@
     border-radius: 20px;
 
 }
+
+.buttonActive{
+    background-color:#f6bade;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+
+}

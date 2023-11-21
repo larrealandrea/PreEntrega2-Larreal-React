@@ -8,6 +8,8 @@ import { Link, NavLink } from "react-router-dom"
 
 const NavBar = ()=> {
 
+    const navStyle =({isActive})=>  isActive? styles.buttonActive : styles.button
+
     return (
         <nav className={styles.NavBar}>
             <div className={styles.imageng}>
@@ -17,10 +19,10 @@ const NavBar = ()=> {
             </div>
 
             <div className={styles.Categories}>
-                <NavLink to={`/categories/vestidos`} className={styles.button}>Vestidos</NavLink>
-                <NavLink to={`/categories/zapatos`} className={styles.button}>Zapatos</NavLink>
-                <NavLink to={`/categories/accesorios`} className={styles.button}>Accesorios</NavLink>
-                <NavLink to={`/categories/liquidacion`} className={styles.button}>Liquidacion</NavLink>
+                <NavLink to={`/categories/vestidos`} className={navStyle}>Vestidos</NavLink>
+                <NavLink to={`/categories/zapatos`} className={navStyle}>Zapatos</NavLink>
+                <NavLink to={`/categories/accesorios`} className={navStyle}>Accesorios</NavLink>
+                <NavLink to={`/categories/liquidacion`} className={navStyle}>Liquidacion</NavLink>
                 <CartWidget/>
             </div>
        

@@ -32,9 +32,9 @@ const ItemDetail = ({sku, name_product, img, price, stock, category, description
             </p>
 
         </div>
-        <footer className={styles.ItemFooter}>
+        <div className={styles.ItemFooter}>
              <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log("Cantidad agregada", quantity)} />
-        </footer>
+        </div>
         </div>
     )
 
