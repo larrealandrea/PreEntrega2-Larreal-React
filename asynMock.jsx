@@ -10,7 +10,7 @@ import products from "./data-dummy.json"
 export const getProducts = (category) =>{
     return new Promise((resolve) =>{
         setTimeout(()=>{
-            resolve(products.filter(x => !category || x.categories === category))
+            resolve(products.filter(x => !category || x.category === category))
         },500)
     })
 }

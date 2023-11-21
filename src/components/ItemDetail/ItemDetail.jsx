@@ -1,7 +1,7 @@
 import ItemCount from "../ItemCount/ItemCount";
 import styles from '../ItemDetail/ItemDetail.module.css'
 
-const ItemDetail = ({sku, name_product, img, price, stock, categories, description}) =>{
+const ItemDetail = ({sku, name_product, img, price, stock, category, description}) =>{
 
     return(
         <div className={styles.CardItem}>
@@ -22,7 +22,7 @@ const ItemDetail = ({sku, name_product, img, price, stock, categories, descripti
                 Descripcion: {description}
             </p>
             <p className={styles.Info}>
-                Categoria: {categories}
+                Categoria: {category}
             </p>
             <p className={styles.Info}>
                 Stock disponible: {stock}

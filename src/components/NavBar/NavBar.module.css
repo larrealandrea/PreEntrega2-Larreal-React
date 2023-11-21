@@ -1,10 +1,11 @@
 
 .NavBar{
-    background-color: rgba(245, 240, 240, 0.479);
+    background-color: rgba(225, 221, 221, 0.479);
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 30px 0;
+    font-size: px;
     
 }
 

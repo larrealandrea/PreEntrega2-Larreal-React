@@ -3,7 +3,7 @@ import styles from '../Item/Item.module.css'
 import { Link } from 'react-router-dom'
 
 
-const Item = ({sku, name_product, img, price, stock}) =>{
+const Item = ({sku, name_product, img, price, stock,category}) =>{
 
 
     return(
@@ -25,9 +25,9 @@ const Item = ({sku, name_product, img, price, stock}) =>{
                 Stock disponible: {stock}
             </p>
         </div>
-        <footer className={styles.ItemFooter}>
-            <Link to={`/item/${sku}`} className={styles.Option}>Ver detalle</Link>
-        </footer>
+        <div className={styles.ItemFooter}>
+            <Link to={`/categories/${category}/${sku}`} className={styles.Option}>Ver detalle</Link>
+        </div>
         </div>
     )
 
