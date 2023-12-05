@@ -4,7 +4,6 @@ import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
 import styles from '../ItemListContainer/ItemListContainer.module.css'
 
-
 const ItemListContainer = ({greeting}) =>{
 
 

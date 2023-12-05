@@ -13,3 +13,10 @@
 .Info{
     padding: 3px;
 }
+
+.Button{
+    background-color:rgb(165, 66, 208, 0.799);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
