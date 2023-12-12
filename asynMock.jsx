@@ -16,7 +16,6 @@ export const getProductById = (productSku) =>{
         setTimeout(()=>{
             const product = products.find(prod=> prod.sku === Number(productSku))
 
-                    console.log("p", product)
             resolve(product)
         },500)
     })
