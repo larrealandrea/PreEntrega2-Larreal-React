@@ -13,7 +13,7 @@ const ItemDetail = ({sku, name_product, img, price, stock, category, description
         setQuantityAdded(quantity)
         
         const item ={
-            sku, name_product, price
+            sku, name_product, price, img
         }
 
         addItem(item,quantity)
@@ -42,7 +42,7 @@ const ItemDetail = ({sku, name_product, img, price, stock, category, description
                 Categoria: {category}
             </p>
             <p className={styles.Info}>
-                Stock disponible: {stock}
+                Stock: {stock}
             </p>
             <p className={styles.Info}>
                 Precio: ${price}
@@ -52,9 +52,9 @@ const ItemDetail = ({sku, name_product, img, price, stock, category, description
         <div className={styles.ItemFooter}>
             {
             quantityAdded > 0 ? (
-                <Link to='cart' className={styles.Button}>Terminar Compra</Link>
+                <Link to='/cart' className={styles.Button}>Terminar Compra</Link>
             ):( 
-                <ItemCount initial={1} stock={10} onAdd={(handleOnAdd)} /> 
+                <ItemCount initial={1} stock={stock} onAdd={(handleOnAdd)} /> 
             )
             }
              

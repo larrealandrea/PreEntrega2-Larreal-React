@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import styles from '../CheckOutForm/CheckOutForm.module.css'
 
 const CheckOutForm = ({onConfirm}) =>{
     const [nombre, setNombre] = useState('')
@@ -43,6 +43,7 @@ const CheckOutForm = ({onConfirm}) =>{
                         value={correo}
                         onChange={({target}) => setCorreo (target.value)} />
                 </label>
+                <button className={styles.button} type="submit">Crear orden</button>
             </form>
         </div>
     )

@@ -1,8 +1,8 @@
 import { useContext, useState } from "react"
 import { CartContext } from "../../Context/cartContext"
-import { Timestamp, collection, docs, doc, getDocs, writeBatch } from "firebase/firestore"
+import { Timestamp, collection, getDocs, writeBatch } from "firebase/firestore"
 import CheckOutForm from "../CheckOutForm/CheckOutForm"
-
+import styles from "../ItemListContainer/ItemListContainer.module.css"
 
 const CheckOut = () =>{
     const [loading, setLoading] = useState(false)
@@ -64,6 +64,7 @@ const CheckOut = () =>{
         }
     }
 
+
     if(loading){
         return <h1>Se esta generando su orden..</h1>
     }
@@ -74,7 +75,7 @@ const CheckOut = () =>{
 
     return(
         <div>
-            <h1>Check Out</h1>
+            <h1 className={styles.Bienvenidos}>Check Out</h1>
             <CheckOutForm onConfirm={createOrder}/>
         </div>
     )
