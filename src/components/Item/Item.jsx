@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../Item/Item.module.css'
 import { Link } from 'react-router-dom'
 
-const Item = ({sku, name_product, img, price, stock}) =>{
+const Item = ({sku, name_product, img, price, stock, id}) =>{
 
 
     return(
@@ -25,7 +25,7 @@ const Item = ({sku, name_product, img, price, stock}) =>{
             </p>
         </div>
         <div className={styles.ItemFooter}>
-            <Link to={`/item/${sku}`} className={styles.Option}>Ver detalle</Link>
+            <Link to={`/item/${id}`} className={styles.Option}>Ver detalle</Link>
         </div>
         </div>
     )

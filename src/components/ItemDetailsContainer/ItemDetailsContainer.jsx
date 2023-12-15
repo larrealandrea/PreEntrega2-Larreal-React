@@ -19,6 +19,8 @@ const ItemDetailContainer = () =>{
         getDoc(docRef)
             .then(response =>{
                 const data = response.data()
+
+
                 const productsAdapted = {sku: response.sku, ...data}
                 setProduct(productsAdapted)
             })

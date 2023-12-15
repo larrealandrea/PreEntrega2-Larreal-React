@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import { getProducts, getProductById } from "../../../asynMock"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
 import styles from '../ItemListContainer/ItemListContainer.module.css'
@@ -23,7 +22,7 @@ const ItemListContainer = ({greeting}) =>{
            .then(response =>{
                 const productsAdapted = response.docs.map(doc=>{
                     const data = doc.data()
-                    return{ sku: doc.sku, ...data}
+                    return{ sku: doc.sku, ...data, id: doc.id}
                 })
                 setProducts (productsAdapted)
            })
