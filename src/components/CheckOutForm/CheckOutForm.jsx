@@ -7,7 +7,7 @@ const CheckOutForm = ({onConfirm}) =>{
     const [correo, setCorreo] = useState('')
 
     const handleConfirm = (evento) =>{
-        evento.reventDefault()
+        evento.preventDefault()
 
         const userData={
             nombre, telefono, correo
