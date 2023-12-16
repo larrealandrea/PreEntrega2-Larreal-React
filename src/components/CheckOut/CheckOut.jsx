@@ -4,6 +4,7 @@ import { Timestamp, collection, getDocs, addDoc } from "firebase/firestore"
 import { db } from "../../firebase/client"
 import CheckOutForm from "../CheckOutForm/CheckOutForm"
 import styles from "../ItemListContainer/ItemListContainer.module.css"
+import { NavLink } from 'react-router-dom';
 
 const CheckOut = () => {
     const [loading, setLoading] = useState(false)
@@ -41,7 +42,12 @@ const CheckOut = () => {
     }
 
     if (orderId) {
-        return <h1>El id de su orden es: {orderId}</h1>
+        return <div><h1>El id de su orden es: {orderId}</h1>
+           <NavLink to={`/`} className={styles.homeLink}>
+                <button className={styles.homeBtn}>Seguir Comprando</button>
+            </NavLink>
+        
+        </div>
     }
 
     return (
