@@ -1,7 +1,7 @@
 .CardItem{
     background-color: rgba(221, 160, 221, 0.394);
     width: 500px;
-    height: 100%;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,9 +15,13 @@
     padding: 3px;
 }
 
-.Button{
+.button{
     background-color:rgb(165, 66, 208, 0.799);
     color: white;
     padding: 20px;
     border-radius: 10px;
+}
+
+.ItemHeader{
+    font-size: 30px;
 }

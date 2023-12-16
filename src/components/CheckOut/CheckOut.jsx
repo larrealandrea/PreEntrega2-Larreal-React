@@ -43,10 +43,10 @@ const CheckOut = () => {
 
     if (orderId) {
         return <div><h1>El id de su orden es: {orderId}</h1>
-           <NavLink to={`/`} className={styles.homeLink}>
+            <NavLink to={`/`} className={styles.homeLink}>
                 <button className={styles.homeBtn}>Seguir Comprando</button>
             </NavLink>
-        
+
         </div>
     }
 

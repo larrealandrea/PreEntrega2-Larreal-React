@@ -1,47 +1,47 @@
 import { useState } from "react"
 import styles from '../CheckOutForm/CheckOutForm.module.css'
 
-const CheckOutForm = ({onConfirm}) =>{
+const CheckOutForm = ({ onConfirm }) => {
     const [nombre, setNombre] = useState('')
     const [telefono, setTelefono] = useState('')
     const [correo, setCorreo] = useState('')
 
-    const handleConfirm = (evento) =>{
+    const handleConfirm = (evento) => {
         evento.preventDefault()
 
-        const userData={
+        const userData = {
             nombre, telefono, correo
         }
 
         onConfirm(userData)
     }
 
-    return(
+    return (
         <div className={styles.Container}>
             <form onSubmit={handleConfirm} className={styles.Form}>
                 <label className={styles.Label}>
                     Nombre
-                    <input 
+                    <input
                         type="text"
                         className={styles.Input}
                         value={nombre}
-                        onChange={({target}) => setNombre (target.value)} />
+                        onChange={({ target }) => setNombre(target.value)} />
                 </label>
                 <label className={styles.Label}>
                     Telefono
-                    <input 
+                    <input
                         type="text"
                         className={styles.Input}
                         value={telefono}
-                        onChange={({target}) => setTelefono (target.value)} />
+                        onChange={({ target }) => setTelefono(target.value)} />
                 </label>
                 <label className={styles.Label}>
                     Correo
-                    <input 
+                    <input
                         type="text"
                         className={styles.Input}
                         value={correo}
-                        onChange={({target}) => setCorreo (target.value)} />
+                        onChange={({ target }) => setCorreo(target.value)} />
                 </label>
                 <button className={styles.button} type="submit">Crear orden</button>
             </form>
