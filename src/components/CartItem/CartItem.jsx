@@ -4,21 +4,6 @@ import { CartContext } from '../../Context/cartContext';
 
 
 
-// [
-//   {
-//       "sku": "5",
-//       "name_product": "Zapatos blancos",
-//       "price": 22990,
-//       "quantity": 3
-//   },
-//   {
-//       "sku": "11",
-//       "name_product": "Body de frutas",
-//       "price": 4990,
-//       "quantity": 3
-//   }
-// ]
-
 
 export default function ({sku,name_product, price, quantity, img}) {
 

@@ -52,7 +52,7 @@ const ItemDetail = ({sku, name_product, img, price, stock, category, description
         <div className={styles.ItemFooter}>
             {
             quantityAdded > 0 ? (
-                <Link to='/cart' className={styles.Button}>Terminar Compra</Link>
+                <Link to='/cart' className={styles.button}>Terminar Compra</Link>
             ):( 
                 <ItemCount initial={1} stock={stock} onAdd={(handleOnAdd)} /> 
             )

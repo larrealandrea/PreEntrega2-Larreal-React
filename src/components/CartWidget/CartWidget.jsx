@@ -23,8 +23,6 @@ const CartWidget = () => {
 
   return (
     <NavLink to={`/cart`} >
-
-
       <IconButton aria-label="cart">
         <StyledBadge badgeContent={cart.length} color="secondary">
           <ShoppingCartIcon />
